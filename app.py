@@ -1,6 +1,21 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+# // to run server - uvicorn app:app --host 0.0.0.0 --port 8000
+
 
 app = FastAPI()
+
+origins = ["http://localhost:3000"]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
 
 def fizz_buzz(n):
     if n % 3 == 0 and n % 5 == 0:
