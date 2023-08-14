@@ -33,7 +33,7 @@ def fizz_buzz(n):
 @app.get('/fizzbuzz')
 def get_fizzbuzz_list():
     # Generate FizzBuzz results for numbers 1 to 100
-    result = [str(fizz_buzz(n)) for n in range(1, 101)]
+    result = [fizz_buzz(n) for n in range(1, 101)]
     return result
 
 
