@@ -8,16 +8,14 @@ h1 {
   margin-bottom: 20px;
 }
 
-
 ul {
   list-style-type: none;
-  display: flex; /* Use flexbox for centering */
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
   padding: 0;
-  width: 100%; /* Adjust width as needed */
+  width: 100%;
 }
-
 
 li {
   flex-basis: 20%;
@@ -30,17 +28,17 @@ li {
 
 /* Add different color classes based on the item value */
 li.Fizz {
-  background-color: #ffcc00; /* Yellow */
+  background-color: #ffcc00; 
 }
 
 li.Buzz {
-  background-color: #66cc99; /* Green */
+  background-color: #66cc99; 
 }
 
 li.FizzBuzz {
-  background-color: #ff6666; /* Red */
+  background-color: #ff6666; 
 }
 
 li {
-  background-color: #96c1eb; /* Blue */
+  background-color: #96c1eb; 
 }
