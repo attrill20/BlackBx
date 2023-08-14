@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './App.css'; // Create an App.css file for styling
+import './App.css';
 
 function App() {
   const [data, setData] = useState([]);
@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get('http://127.0.0.1:8000/fizzbuzz'); // Replace with your API endpoint
+        const response = await axios.get('http://127.0.0.1:8000/fizzbuzz');
         setData(response.data);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -20,9 +20,12 @@ function App() {
   return (
     <div className="app">
       <h1>FizzBuzz Results</h1>
+      <h2>Here are the results: multiples of 3 = Fizz, multiple of 5 = Buzz, multiples of both = FizzBuzz</h2>
       <ul>
         {data.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li key={index} className={item}>
+            {item}
+          </li>
         ))}
       </ul>
     </div>
