@@ -1,6 +1,7 @@
 # FizzBuzz React App
 
-Tech Test for BlckBx from James Attrill
+Tech Test for BlckBx from James Attrill.
+
 This is a simple React app that fetches and displays FizzBuzz results from a FastAPI server. 
 
 ## Getting Started
